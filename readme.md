@@ -1,3 +1,7 @@
-this is a small video displaying what it does , no clue how to integrate that with github 💁‍♂️
+preview:
 
-![test.mp4](./test.mp4)
+
+
+https://github.com/jonnytest1/ts2jsdoc/assets/13507796/632cbd55-a372-432e-9b13-2d7a18befc5d
+
+
