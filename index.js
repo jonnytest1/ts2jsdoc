@@ -1,5 +1,5 @@
 const chokidar = require('chokidar');
-const { readFile } = require('fs/promises');
+const { readFile, writeFile } = require('fs/promises');
 const { createSourceFile, ScriptKind, ScriptTarget,
     isSourceFile, SourceFile, Node, SyntaxKind, isParameter,
     isFunctionExpression, isFunctionDeclaration } = require("typescript")
@@ -51,5 +51,5 @@ chokidar.watch(__dirname, {
     result.dispose()
 
     console.log(newContent)
-
+    await writeFile(path, newContent, { encoding: "utf8" })
 })
